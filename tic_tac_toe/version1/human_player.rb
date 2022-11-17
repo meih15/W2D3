@@ -8,7 +8,9 @@ class HumanPlayer
 
     def get_position
 
-        print "enter a position with coordinated separated with a space like `4 7`"
+        p "It is #{@current_player.mark}'s turn"
+        p "enter a position with coordinated separated with a space like `4 7`"
+        
        
         input = gets.chomp
         arr = input.split(" ")
