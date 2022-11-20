@@ -1,7 +1,7 @@
 class Board
 
     def initialize
-        @grid =  @grid = Array.new(3) {Array.new(3, :_)}
+      @grid = Array.new(3) {Array.new(3, :_)}
     end
 
     attr_reader :grid
@@ -130,21 +130,21 @@ class Board
 
 end
 
-p b = Board.new
-# p b.valid?([1,4]) # false
-# p b.valid?([2,2]) # true
-# p b.valid?([-1, 2]) # false
+# p b = Board.new
+# # p b.valid?([1,4]) # false
+# # p b.valid?([2,2]) # true
+# # p b.valid?([-1, 2]) # false
 
-# p b.empty?([1,1]) #true
+# # p b.empty?([1,1]) #true
 
-#p b.place_mark([1,4], "X") # Invalid spot error
-#p b.place_mark([0,0], :x)
-#p b.place_mark([0,0], "o") # Invalid not empty
-#b.print
+# #p b.place_mark([1,4], "X") # Invalid spot error
+# #p b.place_mark([0,0], :x)
+# #p b.place_mark([0,0], "o") # Invalid not empty
+# #b.print
 
-b.place_mark([0, 2], :O)
-b.place_mark([1,1], :O)
- b.place_mark([2,0], :O)
- b.print
+# b.place_mark([0, 2], :O)
+# b.place_mark([1,1], :O)
+#  b.place_mark([2,0], :O)
+#  b.print
  
- p b.empty_positions?
+#  p b.empty_positions?
